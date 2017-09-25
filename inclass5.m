@@ -1,3 +1,5 @@
+%AW: See comment below. 0.8/1.
+
 %Akash Mitra
 %am132
 
@@ -11,6 +13,10 @@
 % function. (c) Redo part (b) but make the option to specify the fraction
 % of black/white pixels optional with a default value of 1% if not
 % specified. 
+
+%AW. Your function doesn't work as expected. It should be
+% y = imadjust(pixel_image,stretchlim(pixel_image,[frac,1-frac]));
+%-0.25.
 
 AdjustImage('B2DBy.jpg');
 FracAdjustImage('B2DBy.jpg',0.01);
